@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI ASSIGNMENT-02</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+
+<body>
+    <div class="title"><h1>HCI ASSIGNMENT-02</h1></div>
+    
+    <div class="container">
+        <main>
+            <div class="desc">
+            <section>
+                <h1 id="header">Baking Class Registration Form</h1>
+                <p> Hello #BakingEnthusiasts!! Without we realizing, October is already near! 
+                And one of the most anticipated events in October is of course the HALLOWEEN!
+                Good news is that we have prepared classes just for you to make hauntingly 
+                delicious pastries for this spooky event. You can even start learning from zero!*
+                </p>
+                <img class="img1" src=".\desc.jpg" alt="Halloween"/>
+                <img src=".\giphy.gif" alt="check-this-out" class="img2"/>
+            </section>
+            </div>
+
+            <div class="resp">
+            <section>
+                <p class="instruction">Please fill in the following fields with the required information. </p>
+                <hr/>
+                <form method="post">
+                <div class="fieldset1">
+                <fieldset>
+                    <label for="name">Enter Your Name: </label>
+                    <input id="name" name="name" type="text" required/>
+
+                    <br/><br/>
+                    <h3>Choose Your Gender: </h3>
+                    <label>
+                        <input id="male" name="gender" type="radio" value="male" checked/> Male
+                        <input id="female" name="gender" type="radio" value="female"/> Female
+                    </label>
+                    <br/>
+
+                    <label for="age">Input Your Age (years): </label>
+                    <input id="age" name="age" type="text" min="12" max="120" required/>
+                    <br/><br/>
+
+                    <label for="email">Enter Your Email: </label>
+                    <input id="email" name="email" type="email" required/>
+                    <br/><br/>
+
+                    <label for="phone-number">Enter Your Phone Number: </label>
+                    <input id="phone-number" name="phone-number" type="text" min-length="10" max-length="15"required/> <br/><br/>
+                </fieldset>
+                </div>
+
+                <div class="fieldset2">
+                <fieldset>
+                    <div class="myCheckbox">
+                    <h3>Which pastries that you are interested in baking: (click the picture)</h3>
+                        <ul>
+                            <li>
+                              <input type="checkbox" id="checkbox1" name="pastries" value="cake" />
+                              <label for="checkbox1"><img src=".\cake.jpg" alt="cake" width="150px" value="cake"/><br/>Cake</label>
+                            </li>
+                            <li>
+                              <input type="checkbox" id="checkbox2" name="pastries" value="cookie"/>
+                              <label for="checkbox2"><img src=".\cookie.jpg" alt="cookie" width="150px" value="cookie"/><br/>Cookie</label>
+                            </li>
+                            <li>
+                          
+                              <input type="checkbox" id="checkbox3" name="pastries" value="pie"/>
+                              <label for="checkbox3"><img src=".\pie.jpg" alt="pie" width="150px" value="pie"/><br/>Pie</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="checkbox4" name="pastries" value="pie"/>
+                                <label for="checkbox4"><img src=".\pretzel.jpg" alt="pretzel" width="150px" value="pretzel"/><br/>Pretzel(new!)</label>
+                              </li>
+                          </ul>
+                    </div>
+                    <br/>
+
+                    <h3>Have you participated in our other class before?</h3>
+                    <label>
+                        <input name="exp" type="radio" value="yes" checked/> Yes
+                        <input name="exp" type="radio" value="no"/> No
+                    </label>
+                    <br/>
+
+                    <label for="bio">Why do you want to take this class?</label>
+                    <textarea id="bio" name="bio" rows="3" cols="70" placeholder="I want to take this class because..." ></textarea>
+                    <br/><br/>
+
+                    <label for="source">How did you learn about us?</label>
+                        <select id="source" name="source" required>
+                            <option value="">(select one)</option>
+                            <option value="1">Instagram</option>
+                            <option value="2">YouTube</option>
+                            <option value="3">Our Website</option>
+                            <option value="4">Our Media Partner</option>
+                            <option value="5">Other</option>
+                        </select>  <br/><br/>
+                </fieldset>
+                </div>
+
+                <div class="fieldset3">
+                <fieldset>
+                    <p><div class="emph">You are beginners? Fret not!</div><br/> We have a baking pretest for everyone that wants to
+                        join this course, so you can learn together with people that have the same level
+                        as you. </p>
+
+                    <label for="date">Choose a suitable date for the pretest (between 26th Sept 2023 until 1st Oct 
+                        2023): </label>
+                    <input type="date" id="date" name="date" required> <br/><br/>
+
+                    <label for="profile">Upload your profile picture (for your ID card):</label>
+                        <input type="file" name="profile" id="profile" required/>  <br/><br/>
+                </fieldset>
+                </div>
+
+                <div class="fieldset4">
+                <fieldset>
+                    <h4>List of Classes</h4>
+                    <table border="1">
+                        <tr>
+                          <th rowspan="2">Class Name</th>
+                          <th rowspan="2">Teacher</th>
+                          <th colspan="2">Fee</th>
+                          <th rowspan="2">Day</th>
+                        </tr>
+                        <tr>
+                          <td>Registration Fee</td>
+                          <td>Course Fee</td>
+                        </tr>
+                        <tr>
+                            <td>Cake</td>
+                            <td rowspan="2">Suji</td>
+                            <td rowspan="3">Rp 200.000</td>
+                            <td rowspan="3">Rp 1.800.000</td>
+                            <td>Monday, Tuesday</td>
+                        </tr>
+                        <tr>
+                            <td>Cookie</td>
+                            <td>Wednesday, Friday</td>
+                        </tr>
+                        <tr>
+                            <td>Pie</td>
+                            <td>Felicia</td>
+                            <td>Monday, Friday</td>
+                        </tr>
+                        <tr>
+                            <td>Pretzel</td>
+                            <td>Jenny</td>
+                            <td>Free!</td>
+                            <td>Rp 1.700.000</td>
+                            <td>Saturday, Monday</td>
+                        </tr>
+                        <tr>
+                            <td>Cake + Cookie</td>
+                            <td>Suji</td>
+                            <td rowspan="3">Rp 250.000</td>
+                            <td rowspan="3">Rp 2.200.000</td>
+                            <td>Thursday, Saturday, Sunday</td>
+                        </tr>
+                        <tr>
+                            <td>Cake + Pie</td>
+                            <td>Chen</td>
+                            <td>Tuesday, Thursday, Saturday</td>
+                        </tr>
+                        <tr>
+                            <td>Cookie + Pie</td>
+                            <td>Angel</td>
+                            <td>Wednesday, Friday, Sunday</td>
+                        </tr>
+                      </table><br/>
+
+                    <h3>Choose Class (can be more than 1): </h3>
+                    <label>
+                        <input name="choice" type="checkbox" value="cake" checked/> Cake
+                        <input name="choice" type="checkbox" value="cookie"/> Cookie
+                        <input name="choice" type="checkbox" value="pie"/> Pie
+                        <input name="choice" type="checkbox" value="pretzel"/> Pretzel
+                        <input name="choice" type="checkbox" value="cake+cookie"/> Cake + Cookie
+                        <input name="choice" type="checkbox" value="cake+pie"/> Cake + Pie
+                        <input name="choice" type="checkbox" value="cookie+pie"/> Cookie + Pie
+                    </label>
+                    <br/><br/>
+                    
+                    <label for="payment">Choose Payment Method: </label>
+                        <select id="payment" name="payment" required>
+                            <option value="">(select one)</option>
+                            <option value="1">Cash</option>
+                            <option value="2">Transfer</option>
+                        </select><br/>
+                    
+                </fieldset>
+                </div>
+                <br/>
+
+                <input type="submit" value="Submit" />
+                </form>
+            </section>
+            </div>
+        </main>
+    </div>
+
+        <footer>
+            <div class="footer">
+            <p>Prepare yourself to embark a 1-month boo-tiful journey with us</p>
+            <p>*This class is only for people that have the age of 12 or older.</p>
+            <p>More info: <a href="https://instagram.com/raputriella?igshid=OGQ5ZDc2ODk2ZA=="> <img src=.\insta.webp alt="Instagram" width="20px">Instagram</a>
+                <a href="https://youtube.com/@ellaraputri6655?si=b1iQ2mMWpfg-fKU5"><img src=".\youtube.png" alt="youtube" width="20px"/>Youtube</a>
+            </p>
+            </div>
+        </footer>
+
+</body>
+</html>
